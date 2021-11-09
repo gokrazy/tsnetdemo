@@ -2,7 +2,7 @@ module github.com/gokrazy/tsnetdemo
 
 go 1.17
 
-require tailscale.com v1.16.1
+require tailscale.com v1.1.1-0.20211107185623-b3abdc381d99
 
 require (
 	github.com/alexbrainman/sspi v0.0.0-20210105120005-909beea2cc74 // indirect
@@ -42,7 +42,3 @@ require (
 	inet.af/netstack v0.0.0-20211101182044-1c1bcf452982 // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
 )
-
-// I know. Once https://github.com/tailscale/tailscale/pull/3275 is merged,
-// we can express the dependency in this go.mod file.
-replace tailscale.com => /home/michael/go/src/github.com/tailscale/tailscale
