@@ -1,44 +1,67 @@
 module github.com/gokrazy/tsnetdemo
 
-go 1.17
+go 1.19
 
-require tailscale.com v1.1.1-0.20211107185623-b3abdc381d99
+require tailscale.com v1.30.2
 
 require (
+	filippo.io/edwards25519 v1.0.0-rc.1 // indirect
+	github.com/akutz/memconn v0.1.0 // indirect
 	github.com/alexbrainman/sspi v0.0.0-20210105120005-909beea2cc74 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.11.2 // indirect
+	github.com/aws/aws-sdk-go-v2/config v1.11.0 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.6.4 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.8.2 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.2 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.0.2 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.5.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.17.1 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.6.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.11.1 // indirect
+	github.com/aws/smithy-go v1.9.0 // indirect
 	github.com/coreos/go-iptables v0.6.0 // indirect
-	github.com/go-multierror/multierror v1.0.2 // indirect
-	github.com/go-ole/go-ole v1.2.6-0.20210915003542-8b1f7f90f6b1 // indirect
-	github.com/godbus/dbus/v5 v5.0.5 // indirect
+	github.com/fxamacker/cbor/v2 v2.4.0 // indirect
+	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/godbus/dbus/v5 v5.0.6 // indirect
+	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/google/btree v1.0.1 // indirect
-	github.com/google/go-cmp v0.5.6 // indirect
-	github.com/insomniacslk/dhcp v0.0.0-20210621130208-1cac67f12b1e // indirect
-	github.com/josharian/native v0.0.0-20200817173448-b6b71def0850 // indirect
-	github.com/jsimonetti/rtnetlink v0.0.0-20210525051524-4cc836578190 // indirect
-	github.com/klauspost/compress v1.13.6 // indirect
-	github.com/mdlayher/netlink v1.4.1 // indirect
-	github.com/mdlayher/sdnotify v0.0.0-20210228150836-ea3ec207d697 // indirect
-	github.com/mdlayher/socket v0.0.0-20210307095302-262dc9984e00 // indirect
+	github.com/google/go-cmp v0.5.8 // indirect
+	github.com/hdevalence/ed25519consensus v0.0.0-20220222234857-c00d1f31bab3 // indirect
+	github.com/insomniacslk/dhcp v0.0.0-20211209223715-7d93572ebe8e // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
+	github.com/josharian/native v1.0.0 // indirect
+	github.com/jsimonetti/rtnetlink v1.1.2-0.20220408201609-d380b505068b // indirect
+	github.com/klauspost/compress v1.15.4 // indirect
+	github.com/kortschak/wol v0.0.0-20200729010619-da482cc4850a // indirect
+	github.com/mdlayher/genetlink v1.2.0 // indirect
+	github.com/mdlayher/netlink v1.6.0 // indirect
+	github.com/mdlayher/sdnotify v1.0.0 // indirect
+	github.com/mdlayher/socket v0.2.3 // indirect
 	github.com/mitchellh/go-ps v1.0.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/tailscale/certstore v0.0.0-20210528134328-066c94b793d3 // indirect
+	github.com/tailscale/certstore v0.1.1-0.20220316223106-78d6e1c49d8d // indirect
+	github.com/tailscale/golang-x-crypto v0.0.0-20220428210705-0b941c09a5e1 // indirect
 	github.com/tailscale/goupnp v1.0.1-0.20210804011211-c64d0f06ea05 // indirect
 	github.com/tailscale/netlink v1.1.1-0.20211101221916-cabfb018fe85 // indirect
 	github.com/tcnksm/go-httpstat v0.2.0 // indirect
-	github.com/u-root/uio v0.0.0-20210528114334-82958018845c // indirect
-	github.com/vishvananda/netlink v1.1.1-0.20211101163509-b10eb8fe5cf6 // indirect
-	github.com/vishvananda/netns v0.0.0-20200728191858-db3c7e526aae // indirect
-	go4.org/intern v0.0.0-20211027215823-ae77deb06f29 // indirect
-	go4.org/mem v0.0.0-20201119185036-c04c5a6ff174 // indirect
-	go4.org/unsafe/assume-no-moving-gc v0.0.0-20211027215541-db492cf91b37 // indirect
-	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
-	golang.org/x/net v0.0.0-20211020060615-d418f374d309 // indirect
-	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20211020174200-9d6173849985 // indirect
-	golang.org/x/time v0.0.0-20210611083556-38a9dc6acbc6 // indirect
-	golang.zx2c4.com/wireguard v0.0.0-20211020205005-82e0b734e5d2 // indirect
+	github.com/u-root/uio v0.0.0-20220204230159-dac05f7d2cb4 // indirect
+	github.com/vishvananda/netlink v1.1.1-0.20211118161826-650dca95af54 // indirect
+	github.com/vishvananda/netns v0.0.0-20211101163701-50045581ed74 // indirect
+	github.com/x448/float16 v0.8.4 // indirect
+	go4.org/mem v0.0.0-20210711025021-927187094b94 // indirect
+	go4.org/netipx v0.0.0-20220725152314-7e7bdc8411bf // indirect
+	golang.org/x/crypto v0.0.0-20220427172511-eb4f295cb31f // indirect
+	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
+	golang.org/x/net v0.0.0-20220607020251-c690dde0001d // indirect
+	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f // indirect
+	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
+	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
+	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/time v0.0.0-20211116232009-f0f3c7e86c11 // indirect
+	golang.zx2c4.com/wintun v0.0.0-20211104114900-415007cec224 // indirect
+	golang.zx2c4.com/wireguard v0.0.0-20220703234212-c31a7b1ab478 // indirect
 	golang.zx2c4.com/wireguard/windows v0.4.10 // indirect
-	inet.af/netaddr v0.0.0-20211027220019-c74959edd3b6 // indirect
-	inet.af/netstack v0.0.0-20211101182044-1c1bcf452982 // indirect
+	gvisor.dev/gvisor v0.0.0-20220801230058-850e42eb4444 // indirect
 	nhooyr.io/websocket v1.8.7 // indirect
 )
